@@ -1,0 +1,137 @@
+/*Feuille de style pour les pages des projets*/
+
+/*Dans les pages web où on choisit un projet*/
+.choix_projet{
+  display: block;
+  height: 200px;
+  padding: 10px;
+  filter: brightness(1);
+}
+
+.choix_projet:hover{
+  filter: brightness(0.5);
+}
+
+.conteneur .img_texte{
+  position:relative;
+}
+
+.img_texte p{
+  display: none;
+  position: absolute;
+  transform: translate(25px,-200px);
+  color:white;
+  font-weight: bold;
+  text-align: left;
+  width:135px;
+}
+
+.choix_projet:hover + p{
+  display: block;
+}
+
+.conteneur{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/*Dans les pages web présentant un projet*/
+.retour{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  color: rgb(0,255,255);
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.retour > [href] > img{
+  margin:0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-right:10px;
+  padding-left: 0px;
+  width:50px;
+}
+
+.retour > p{
+  margin:0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-right: 0px;
+  padding-left:10px;
+}
+
+.légende{
+  font-weight: bold;
+  font-size: 19px;
+}
+
+/*Toutes les images et vidéos des pages des projets*/
+.projet{
+  max-width:50%;
+}
+
+.bloc_images{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 100%;
+}
+
+.projet + p{
+  text-align: center;
+}
+
+.projet + .bloc_images, video + .bloc_images{
+  margin-top: 30px;
+}
+
+video, .projet{
+  border-color:rgb(50,50,50);
+  border-left-width: 50px;
+  border-right-width: 50px;
+  border-top-width: 20px;
+  border-bottom-width: 20px;
+  border-style: solid;
+}
+
+/*Les images dans "La montagne-décharge"*/
+.envt_virtuel{
+  width: 50%;
+}
+
+.pnj{
+  width: 20%;
+}
+
+/*Les images des projets de type "Programmation"*/
+.programmation{
+  max-width:30%;
+}
+
+.projet, .programmation{
+  margin-top: 30px;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*Synopsis des projets de type "Vidéo"*/
+.synopsis{
+  margin-top:30px;
+  margin-bottom: 30px;
+  font-style: italic;
+
+}
+
+.titre_synopsis{
+  font-weight: bold;
+  text-decoration:underline;
+}
